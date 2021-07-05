@@ -1,8 +1,10 @@
 <template>
-  <div id="nav">
-    <main-tab-bar></main-tab-bar>
+  <div id="app" class="wrapper">
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
+    <main-tab-bar/>
   </div>
-  <router-view/>
 </template>
 <script>
 import MainTabBar from "@/components/content/MainTabBar/MainTabBar";
